@@ -5,7 +5,11 @@ example: if the input is 4 then your program should return 10 because
 */
 
 let simpleAdding = function (num) {
-  // Answer here
+  if(num === 0){
+    return 0
+  }else{
+    return num + simpleAdding(num - 1)
+  }
 }
 
 module.exports = simpleAdding

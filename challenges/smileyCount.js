@@ -18,7 +18,10 @@ let invalid = [';(', ':>', ':}', ':]']
 // _____________________________________________________________________________
 
 let smileyCount = function (arr) {
-  // Answer here
+  let smile = 0;
+  for(let x = 0; x < arr.length; x++){
+    
+  }
 }
 
 module.exports = smileyCount

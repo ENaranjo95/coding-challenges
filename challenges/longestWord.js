@@ -8,7 +8,16 @@ empty.
 */
 
 let longestWord = function (sen) {
-  // Answer here
+  const words = sen.split(' ')
+  let long = 0
+  let word = ''
+  for(let x = 0; x < words.length; x++){
+    if( long < words[x].length ){
+      long = words[x].length
+      word = words[x]
+    }
+  }
+  return word
 }
 
 module.exports = longestWord

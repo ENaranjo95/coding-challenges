@@ -13,7 +13,20 @@ Examples:
 
 
 let narcNumber = (value) => {
-// Answer here
+  const num = value.toString()
+  const power = num.length
+  let final = []
+  let sum = 0
+  for(let x = 0; x < num.length; x++){
+    final.push( Math.pow(parseInt(num[x]), power) )
+  }
+  for(let i = 0; i < final.length; i++){
+    sum += final[i]
+  }
+  if(value === sum){
+    return true
+  }
+  return false
 }
 
 module.exports = narcNumber

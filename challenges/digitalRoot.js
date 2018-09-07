@@ -19,7 +19,15 @@ Examples:
 
 
 let digitalRoot = (n) => {
-  // Answer here
+  if(n >= 10){
+    const num = n.toString()
+    let sum = 0
+    for(let x = 0; x < num.length; x++){
+      sum += parseInt(num.charAt(x))
+    }
+    return digitalRoot(sum)
+  }
+  return n
 }
 
 module.exports = digitalRoot

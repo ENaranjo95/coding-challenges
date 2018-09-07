@@ -7,7 +7,17 @@
  */
 
 let letterChanges = function (str) {
-// Answer here
+  let final = []
+  const alpha = 'abcdefghijklmnopqrstuvwxyz'
+  const letters = str.split(' ')
+  for(let x = 0; x < letters.length; x++){
+    for(let y = 0; y < alpha.length; y++){
+      if(letters[x] === alpha[y]){
+
+      }
+    }
+  }
+  return final.join(' ').replace(/'aeiou'/gi, 'AEIOU')
 }
 
 module.exports = letterChanges
