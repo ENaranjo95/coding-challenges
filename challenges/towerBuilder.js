@@ -21,7 +21,16 @@ For example, a tower of 3 floors looks like below:
 // _____________________________________________________________________________
 
 let towerBuilder = (nFloors) => {
-  // Answer here
+  let tower = [];
+  let build = [];
+  for(let x = 0; x < nFloors; x++){
+    for(let y = 0; y < (x * 2) + 1; y++){
+      build.push('*')
+    }
+    tower.push(build.join(''))
+    build = []
+  }
+  return tower
 }
 
 module.exports = towerBuilder

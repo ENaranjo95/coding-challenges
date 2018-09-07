@@ -6,7 +6,10 @@ and minutes with a colon.
 */
 
 let timeConvert = function (num) {
-  // Answer here
+  let hour = num / 60
+  let minutes = num % 60
+  return `${Math.floor(hour)}:${minutes}`
+
 }
 
 module.exports = timeConvert
