@@ -23,10 +23,8 @@ For example, a tower of 3 floors looks like below:
 // Stuck
 let towerBuilder = (nFloors) => {
   let tower = [];
-  let space = ' ';
-  let piece = '*';
   for(let x = 0; x < nFloors; x++){
-    tower.push(`${space.repeat(nFloors - x - 1)}${piece.repeat(x * 2 + 1)}${space.repeat(nFloors - x - 1)}`)
+    tower.push(`${ ' '.repeat(nFloors - x - 1) }${ '*'.repeat(x * 2 + 1) }${ ' '.repeat(nFloors - x - 1) }`)
   }
   return tower
 }
