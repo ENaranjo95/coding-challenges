@@ -20,15 +20,13 @@ For example, a tower of 3 floors looks like below:
 ]
 // _____________________________________________________________________________
 
+// Stuck
 let towerBuilder = (nFloors) => {
   let tower = [];
-  let build = [];
+  let space = ' ';
+  let piece = '*';
   for(let x = 0; x < nFloors; x++){
-    for(let y = 0; y < (x * 2) + 1; y++){
-      build.push('*')
-    }
-    tower.push(build.join(''))
-    build = []
+    tower.push(`${space.repeat(nFloors - x - 1)}${piece.repeat(x * 2 + 1)}${space.repeat(nFloors - x - 1)}`)
   }
   return tower
 }

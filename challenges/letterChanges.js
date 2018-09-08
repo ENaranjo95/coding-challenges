@@ -7,17 +7,19 @@
  */
 
 let letterChanges = function (str) {
-  let final = []
-  const alpha = 'abcdefghijklmnopqrstuvwxyz'
-  const letters = str.split(' ')
-  for(let x = 0; x < letters.length; x++){
-    for(let y = 0; y < alpha.length; y++){
-      if(letters[x] === alpha[y]){
-
-      }
+  let words = str.split('')
+  for(let x = 0; x < words.length; x++){
+    if(words[x] === 'z' || words[x] === 'Z'){
+      words.splice(x, 1, 'a')
+    }else if(words[x] === ' '){
+      words.splice(x, 1, ' ')
+    }else{
+      words.splice(x, 1, String.fromCharCode(words[x].charCodeAt() + 1))
     }
   }
-  return final.join(' ').replace(/'aeiou'/gi, 'AEIOU')
+  return words.join('').replace(/[aeiou]/gi, (vowel) =>{
+    return vowel.toUpperCase()
+  })
 }
 
 module.exports = letterChanges
