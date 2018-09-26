@@ -7,24 +7,7 @@ Have the function parityOutlier take the array as an argument and return this
 */
 
 let parityOutlier = function (arr) {
-  let evenCount = 0;
-  let even = []
-  let oddCount = 0
-  let odd = []
-  for(let x = 0; x < arr.length; x++){
-    if(arr[x] % 2 == 0){
-      evenCount++
-      even.push(arr[x])
-    }else{
-      oddCount++
-      odd.push(arr[x])
-    }
-  }
-  if(evenCount === 1){
-    return even[0]
-  }else{
-    return odd[0]
-  }
+  
 }
 
 module.exports = parityOutlier

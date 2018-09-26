@@ -18,19 +18,7 @@ let invalid = [';(', ':>', ':}', ':]']
 // _____________________________________________________________________________
 
 let smileyCount = function (arr) {
-  let smile = 0;
-  for(let x = 0; x < arr.length; x++){
-    if(arr[x][0] === ':' || arr[x][0] === ';'){
-      if(arr[x][1] === ')' || arr[x][1] === 'D'){
-        smile++
-      }else if(arr[x][1] === '-' || arr[x][1] === '~'){
-        if(arr[x][2] === ')' || arr[x][2] === 'D'){
-          smile++
-        }
-      }
-    }
-  }
-  return smile
+
 }
 
 module.exports = smileyCount

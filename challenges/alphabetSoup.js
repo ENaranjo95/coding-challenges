@@ -6,7 +6,7 @@ included in the string.
 */
 
 let alphabetSoup = function (str) {
-  return str.split('').sort().join('')
+
 }
 
 module.exports = alphabetSoup

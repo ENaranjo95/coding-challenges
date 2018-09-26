@@ -6,7 +6,7 @@ dna dlroW olleH".
 */
 
 let firstReverse = function (str) {
-  return str.split('').reverse().join('')
+  
 }
 
 module.exports = firstReverse

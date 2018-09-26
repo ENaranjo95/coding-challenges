@@ -8,14 +8,7 @@ false. The string will not be empty and will have at least one letter.
 */
 
 let simpleSymbols = function (str) {
-  for(let x = 0; x < str.length; x++){
-    if(str[x] !== '+' && str[x] !== '='){
-      if(str[x - 1] !== '+' && str[x + 1] !== '+'){
-        return false
-      }
-    }
-  }
-  return true
+  
 }
 
 module.exports = simpleSymbols
